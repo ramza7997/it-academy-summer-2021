@@ -5,16 +5,13 @@
 а вместо чисел одновременно кратных и 3 и 5 - FizzBuzz
 """
 
-lst = []
 
-for i in range(1, 100):
+for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
-        lst.append("FizzBuzz")
+        print("FizzBuzz")
     elif i % 3 == 0:
-        lst.append("Fizz")
+        print("Fizz")
     elif i % 5 == 0:
-        lst.append("Buzz")
+        print("Buzz")
     else:
-        lst.append(i)
-
-print(lst)
+        print(i)
