@@ -4,7 +4,20 @@
 которые знает хотя бы один из школьников.
 """
 
-args = [{input() for j in range(int(input()))} for i in range(int(input()))]
-known_by_everyone, known_by_someone = set.intersection(*args), set.union(*args)
-print(len(known_by_everyone), *sorted(known_by_everyone), sep='\n')
-print(len(known_by_someone), *sorted(known_by_someone), sep='\n')
+student = int(input())
+languag_list = []
+for i in range(1, student + 1):
+    languag_set = set()
+    languag_n = int(input())
+    for j in range(languag_n):
+        languag = input()
+        languag_set.add(languag)
+    languag_list.append(languag_set)
+know = set.intersection(*languag_list)
+print(len(know))
+for lang in know:
+    print(lang)
+a_know = set.union(*languag_list)
+print(len(a_know))
+for languag_a in a_know:
+    print(languag_a)
