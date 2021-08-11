@@ -9,7 +9,6 @@ ratings.txt – гистограмма рейтингов,
 years.txt – гистограмма годов.
 """
 
-
 try:
     with open("data_hw5/ratings.list") as rating_list:
         print("")
