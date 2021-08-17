@@ -8,9 +8,10 @@ def max_sep(num, count):
     if num % 2 == 0:
         count += 1
         num = num / 2
-        return max_sep(num, count)
+        result = max_sep(num, count)
     else:
-        return 2 ** count
+        result = 2 ** count
+    return result
 
 
 input_num = int(input('Введите число: '))
