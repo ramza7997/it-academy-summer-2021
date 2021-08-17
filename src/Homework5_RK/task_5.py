@@ -11,9 +11,10 @@ def nearest_degree(num_work):
         num = num / 2
         final_num += 1
     if (num_work - 2 ** final_num) / 2 ** final_num >= 0.5:
-        return '{}'.format(2 ** (final_num + 1))
+        result = '{}'.format(2 ** (final_num + 1))
     else:
-        return '{}'.format(2 ** final_num)
+        result = '{}'.format(2 ** final_num)
+    return result
 
 
 input_num = int(input())
