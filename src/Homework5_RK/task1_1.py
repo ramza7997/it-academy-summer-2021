@@ -9,6 +9,7 @@ from string import ascii_letters
 
 
 def total_price(rub=0, penny=0, amount=0):
+
     """Посчитать общую цену в рублях и копейках за n товаров."""
 
     price_amount = (rub * 100 + penny) * amount
@@ -18,6 +19,7 @@ def total_price(rub=0, penny=0, amount=0):
 
 
 def longest_word(text=''):
+
     """Найти самое длинное слово в введенном предложении."""
 
     punctuation = ',.:;-_!?'
@@ -36,6 +38,7 @@ def longest_word(text=''):
 
 
 def del_spaces(input_text=''):
+
     """Удалить из строки повторяющиеся символы и все пробелы."""
 
     input_text = input_text.replace(' ', '')
@@ -49,6 +52,7 @@ def del_spaces(input_text=''):
 
 
 def lower_upper(inp_str=''):
+
     """Посчитать буквы
     Посчитать количество строчных (маленьких) и прописных (больших) букв в
     введенной строке. Учитывать только английские буквы.
@@ -76,6 +80,7 @@ def lower_upper(inp_str=''):
 
 
 def n_fibonacci(n=1):
+
     """Вывести n-ое число Фибоначчи."""
 
     f1 = 0
@@ -91,6 +96,7 @@ def n_fibonacci(n=1):
 
 
 def palindrome(number=0):
+
     """Определить, является ли число палиндромом."""
 
     a = 0
@@ -108,6 +114,7 @@ def palindrome(number=0):
 
 
 def triangle(a=1, b=1, c=1):
+
     """Проверить, действительно ли это стороны треугольника."""
 
     if (a + b) > c and (b + c) > a and (c + a) > b:
@@ -121,12 +128,14 @@ def triangle(a=1, b=1, c=1):
 
 
 def solution(string=''):
+
     """Перевернуть строку."""
 
     print(string[::-1])
 
 
 def descending_order(num=''):
+
     """Вывести числа в порядке убывания."""
 
     n = []
@@ -138,6 +147,7 @@ def descending_order(num=''):
 
 
 def find_short(s=''):
+
     """Find shortest Word."""
 
     text1 = s.split()
@@ -150,6 +160,7 @@ def find_short(s=''):
 
 
 def sort_array(source_array=[1, 2]):
+
     """Sort the odd.
     You will be given an array of numbers. You have to sort the odd numbers in
     ascending order while leaving the even numbers at their original positions
@@ -173,6 +184,7 @@ def sort_array(source_array=[1, 2]):
 
 
 def fizzbuzz():
+
     """FizzBuzz
     Напишите программу, которая печатает цифры от 1 до 100, но вместо чисел,
     кратных 3 пишет Fizz, вместо чисел кратный 5 пишет Buzz, а вместо чисел
@@ -191,6 +203,7 @@ def fizzbuzz():
 
 
 def learn_list():
+
     """Генератор списка
     Используйте генератор списков чтобы получить следующий:
     ['ab', 'ac', 'ad', 'bb', 'bc', 'bd']
@@ -213,6 +226,7 @@ def learn_list():
 
 
 def learn_tuple():
+
     """Создайте список ['a', 'b', 'c'] и сделайте из него кортеж"""
 
     lst = ['a', 'b', 'c']
@@ -233,6 +247,7 @@ def learn_tuple():
 
 
 def list_number(input_string=''):
+
     """Посчитать пары
     Дан список чисел. Посчитайте, сколько в нем пар элементов, равных друг
     другу. Считается, что любые два элемента, равные друг другу образуют одну
@@ -252,6 +267,7 @@ def list_number(input_string=''):
 
 
 def unique_elements(input_list=[1, 2, 3, 1, 1, 2, 4, 7, 'a', 'b', 'a']):
+
     """Уникальные элементы в списке
     Дан список. Выведите те его элементы, которые встречаются в списке только
     один раз. Элементы нужно выводить в том порядке, в котором они встречаются
@@ -266,6 +282,7 @@ def unique_elements(input_list=[1, 2, 3, 1, 1, 2, 4, 7, 'a', 'b', 'a']):
 
 
 def sort_list(input_list=[1, 0, 0, 2, 4, 1, 0, 4, 5, 0, 3, 7]):
+
     """Упорядоченный список.
     Дан список целых чисел. Требуется переместить все ненулевые элементы в
     левую часть списка, не меняя их порядок, а все нули - в правую часть.
@@ -282,6 +299,7 @@ def sort_list(input_list=[1, 0, 0, 2, 4, 1, 0, 4, 5, 0, 3, 7]):
 
 
 def dict_comprehensions():
+
     """Dict comprehensions
     Создайте словарь с помощью генератора словарей, так чтобы его ключами были
 числа от 1 до 20, а значениями кубы этих чисел.
@@ -294,6 +312,7 @@ def dict_comprehensions():
 
 def cities(num_country=1, country_city='Belarus Minsk', num_city=1,
            city='Minsk'):
+
     """Города
     Дан список стран и городов каждой страны. Затем даны названия городов. Для
     каждого города укажите, в какой стране он находится.
@@ -333,6 +352,7 @@ def cities(num_country=1, country_city='Belarus Minsk', num_city=1,
 
 
 def two_list_number1():
+
     """Сравнить списки
     Даны два списка чисел. Посчитайте, сколько различных чисел содержится
     одновременно как в первом списке, так и во втором.
@@ -347,6 +367,7 @@ def two_list_number1():
 
 
 def two_list_number2():
+
     """Сравнить списки
     Даны два списка чисел. Посчитайте, сколько различных чисел входит
     только в один из этих списков.
@@ -361,6 +382,7 @@ def two_list_number2():
 
 
 def languages(num_schoolboy=1, num_lang=1, lang='Russian'):
+
     """Языки
     Каждый из N школьников некоторой школы знает Mi языков. Определите, какие
     языки знают все школьники и языки, которые знает хотя бы один из школьников
@@ -410,6 +432,7 @@ def languages(num_schoolboy=1, num_lang=1, lang='Russian'):
 
 def different_words(input_string='Hello!     How are you?\n'
                                  ' Where are you going?'):
+
     """Слова
     Во входной строке записан текст. Словом считается последовательность
     непробельных символов идущих подряд, слова разделены одним или большим
@@ -430,6 +453,7 @@ def different_words(input_string='Hello!     How are you?\n'
 
 
 def euclid_algorithm(num1=1, num2=2):
+
     """Числа
     Даны два натуральных числа. Вычислите их наибольший общий делитель при
     помощи алгоритма Евклида (мы не знаем функции и рекурсию).
