@@ -11,7 +11,6 @@ from string import ascii_letters
 
 def total_price(rub=0, penny=0, amount=0):
     """Посчитать общую цену в рублях и копейках за n товаров."""
-
     price_amount = (rub * 100 + penny) * amount
     price_rub = price_amount // 100
     price_penny = price_amount % 100
@@ -20,7 +19,6 @@ def total_price(rub=0, penny=0, amount=0):
 
 def longest_word(text=''):
     """Найти самое длинное слово в введенном предложении."""
-
     punctuation = ',.:;-_!?'
 
     for char in text:
@@ -38,7 +36,6 @@ def longest_word(text=''):
 
 def del_spaces(input_text=''):
     """Удалить из строки повторяющиеся символы и все пробелы."""
-
     input_text = input_text.replace(' ', '')
     n_text = ''
 
@@ -55,7 +52,6 @@ def lower_upper(inp_str=''):
     Посчитать количество строчных (маленьких) и прописных (больших) букв в
     введенной строке. Учитывать только английские буквы.
     """
-
     inp_str1 = ''
 
     for i in inp_str:
@@ -79,7 +75,6 @@ def lower_upper(inp_str=''):
 
 def n_fibonacci(n=1):
     """Вывести n-ое число Фибоначчи."""
-
     f1 = 0
     f2 = 1
     i = 1
@@ -94,7 +89,6 @@ def n_fibonacci(n=1):
 
 def palindrome(number=0):
     """Определить, является ли число палиндромом."""
-
     a = 0
     c = number
 
@@ -111,7 +105,6 @@ def palindrome(number=0):
 
 def triangle(a=1, b=1, c=1):
     """Проверить, действительно ли это стороны треугольника."""
-
     if (a + b) > c and (b + c) > a and (c + a) > b:
         p = (a + b + c) / 2
         square = p * (p - a) * (p - b) * (p - c)
@@ -124,13 +117,11 @@ def triangle(a=1, b=1, c=1):
 
 def solution(string=''):
     """Перевернуть строку."""
-
     print(string[::-1])
 
 
 def descending_order(num=''):
     """Вывести числа в порядке убывания."""
-
     n = []
     for i in str(num):
         n.append(i)
@@ -141,7 +132,6 @@ def descending_order(num=''):
 
 def find_short(s=''):
     """Find shortest Word."""
-
     text1 = s.split()
     min_text = s
     for i in text1:
@@ -157,7 +147,6 @@ def sort_array(source_array=[1, 2]):
     You will be given an array of numbers. You have to sort the odd numbers in
     ascending order while leaving the even numbers at their original positions
     """
-
     list_even = []
     new_list = source_array[:]
 
@@ -182,7 +171,6 @@ def fizzbuzz():
     кратных 3 пишет Fizz, вместо чисел кратный 5 пишет Buzz, а вместо чисел
     одновременно кратных и 3 и 5 - FizzBuzz
     """
-
     for number in range(1, 101):
         if number % 3 == 0 and number % 5 == 0:
             print("FizzBuzz")
@@ -200,7 +188,6 @@ def learn_list():
     Используйте генератор списков чтобы получить следующий:
     ['ab', 'ac', 'ad', 'bb', 'bc', 'bd']
     """
-
     lst = [first + second for first in 'ab' for second in 'bcd']
     print(lst)
 
@@ -219,7 +206,6 @@ def learn_list():
 
 def learn_tuple():
     """Создайте список ['a', 'b', 'c'] и сделайте из него кортеж"""
-
     lst = ['a', 'b', 'c']
     tpl = tuple(lst)
     print(tpl)
@@ -247,7 +233,6 @@ def list_number(input_string=''):
     Выходные данные - количество пар.
     Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
     """
-
     lst = input_string.split()
     num = 0
     for i in lst:
@@ -264,7 +249,6 @@ def unique_elements(input_list=[1, 2, 3, 1, 1, 2, 4, 7, 'a', 'b', 'a']):
     один раз. Элементы нужно выводить в том порядке, в котором они встречаются
     в списке.
     """
-
     new_lst = []
     for i in input_list:
         if input_list.count(i) == 1:
@@ -281,7 +265,6 @@ def sort_list(input_list=[1, 0, 0, 2, 4, 1, 0, 4, 5, 0, 3, 7]):
     использовать нельзя, задачу нужно выполнить за один проход по списку.
     Распечатайте полученный список.
     """
-
     for i in input_list:
         if i == 0:
             input_list.remove(i)
@@ -295,7 +278,6 @@ def dict_comprehensions():
     Создайте словарь с помощью генератора словарей, так чтобы его ключами были
 числа от 1 до 20, а значениями кубы этих чисел.
     """
-
     dictionary = {element: element ** 3 for element in range(1, 21)}
 
     print(dictionary)
@@ -316,7 +298,6 @@ def cities(num_country=1, country_city='Belarus Minsk', num_city=1,
     Для каждого из запроса выведите название страны, в котором находится
     данный город.
     """
-
     # Создать словарь: ключ = страна, значение = список городов
     count1 = 1
     dict_country = {}
@@ -348,7 +329,6 @@ def two_list_number1():
     Даны два списка чисел. Посчитайте, сколько различных чисел содержится
     одновременно как в первом списке, так и во втором.
     """
-
     list_number1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     list_number2 = [5, 6, 7, 8, 9, 10, 11, 12, 13]
 
@@ -363,7 +343,6 @@ def two_list_number2():
     Даны два списка чисел. Посчитайте, сколько различных чисел входит
     только в один из этих списков.
     """
-
     list_number1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     list_number2 = [5, 6, 7, 8, 9, 10, 11, 12, 13]
 
@@ -387,7 +366,6 @@ def languages(num_schoolboy=1, num_lang=1, lang='Russian'):
     которые знает хотя бы один школьник, на следующих строках - список таких
     языков.
     """
-
     # Создать словарь: ключ = номер школьника, значение = список языков
     count1 = 1
     dict_schoolboy_lang = {}
@@ -430,7 +408,6 @@ def different_words(input_string='Hello!     How are you?\n'
     числом пробелов или символами конца строки. Определите, сколько различных
     слов содержится в этом тексте.
     """
-
     punctuation = '!()-[]{};?:,.;_'
     edit_string = ''
 
@@ -449,7 +426,6 @@ def euclid_algorithm(num1=1, num2=2):
     Даны два натуральных числа. Вычислите их наибольший общий делитель при
     помощи алгоритма Евклида (мы не знаем функции и рекурсию).
     """
-
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2
